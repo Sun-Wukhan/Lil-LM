@@ -1,0 +1,23 @@
+# === Core LLM Training Dependencies ===
+torch
+numpy
+tqdm
+datasets
+tokenizers
+transformers
+
+# === Reinforcement Learning ===
+trl
+accelerate
+
+# === SWE-bench / Bug-Fixing Environments ===
+pytest
+docker
+gitpython
+swebench
+
+# === Logging / Visualisation ===
+tensorboard
+
+# === Utilities ===
+psutil
