@@ -40,8 +40,8 @@ def main():
 
     # === Dataset ===
     dataset = TextDataset(
-        path=corpus_path,
-        tokenizer_path=tokenizer_path,
+        root_path="data/raw", 
+        tokenizer_path="tokenizer/tokenizer_8k.json",
         block_size=128
     )
     loader = DataLoader(dataset, batch_size=16, shuffle=True)
@@ -52,7 +52,7 @@ def main():
     # === Training ===
     model.train()
 
-    max_steps = 500  # small test run
+    max_steps = 5000  # small test run
 
     for step, (x, y) in enumerate(loader):
         if step > max_steps:
